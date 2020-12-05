@@ -1,0 +1,16 @@
+*.pdf
+datasheets/
+mech/
+fpga/archive/
+node_modules/
+fpga/images/*.png
+fpga/images/*.hex
+fpga/images/*.jpg
+fpga/**/db/
+fpga/**/incremental_db/
+fpga/**/output_files/
+fpga/videos/
+*.stp
+multimedia/
+
+
