@@ -27,7 +27,7 @@ url: "https://danfoisy.github.io"
 github_username:  danfoisy
 
 # Build settings
-theme: jekyll-theme-midnight
+theme: minima
 plugins:
   - jekyll-feed
 markdown: GFM
