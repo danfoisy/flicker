@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim
+vPll
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1575942339
+!i10b 1
+!s100 U[P0<0SnCI1CZ9YK7fh;=2
+IU`Q2H_ND8I4JW?jc11[H[2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Pll_v_unit
+S1
+R0
+w1573349145
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/Pll.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/Pll.v
+L0 6
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1575942339.000000
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/Pll.v|
+!s90 -reportprogress|300|-sv|-work|Pll|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/Pll.v|
+!i113 1
+Z6 o-sv -work Pll
+!s92 -sv -work Pll +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis
+Z7 tCvgOpt 0
+n@pll
+vPll_altpll_0
+R1
+R2
+!i10b 1
+!s100 iDlXV@3NSbQTGULb;f^JB2
+IgcEl9AeVHCf2f@i6Hb@cg0
+R3
+Z8 !s105 Pll_altpll_0_v_unit
+S1
+R0
+Z9 w1573349146
+Z10 8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules/Pll_altpll_0.v
+Z11 FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules/Pll_altpll_0.v
+L0 222
+R4
+r1
+!s85 0
+31
+R5
+Z12 !s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules/Pll_altpll_0.v|
+Z13 !s90 -reportprogress|300|-sv|-work|Pll|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules/Pll_altpll_0.v|
+!i113 1
+R6
+Z14 !s92 -sv -work Pll +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules
+R7
+n@pll_altpll_0
+vPll_altpll_0_altpll_rrh2
+R1
+R2
+!i10b 1
+!s100 1GJ9kf`=4]?ab6S<VDVMG0
+I?]>K1=[Q;TFPHfO9HVZ?]0
+R3
+R8
+S1
+R0
+R9
+R10
+R11
+Z15 L0 131
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R6
+R14
+R7
+n@pll_altpll_0_altpll_rrh2
+vPll_altpll_0_altpll_s8h2
+R1
+!s110 1569162023
+!i10b 1
+!s100 3XPEmSgNC;BI7RfneF@ja1
+IV;oRkeA=BG_OzhAl_j19l1
+R3
+R8
+S1
+R0
+w1563757180
+R10
+R11
+R15
+R4
+r1
+!s85 0
+31
+!s108 1569162023.000000
+R12
+R13
+!i113 1
+R6
+R14
+R7
+n@pll_altpll_0_altpll_s8h2
+vPll_altpll_0_dffpipe_l2c
+R1
+R2
+!i10b 1
+!s100 UEZ^=z<m26@Y;89^L_BUb1
+IS@k]d1i_JLo>l0Y6MWf`M1
+R3
+R8
+S1
+R0
+R9
+R10
+R11
+L0 38
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R6
+R14
+R7
+n@pll_altpll_0_dffpipe_l2c
+vPll_altpll_0_stdsync_sv6
+R1
+R2
+!i10b 1
+!s100 ;=I_^W;?zNCh?E_2E@QnY1
+I0E5;dEB4;njWC>4VMoZde1
+R3
+R8
+S1
+R0
+R9
+R10
+R11
+L0 99
+R4
+r1
+!s85 0
+31
+R5
+R12
+R13
+!i113 1
+R6
+R14
+R7
+n@pll_altpll_0_stdsync_sv6

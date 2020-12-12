@@ -1,0 +1,1 @@
+vsim -gui -l msim_transcript work.top

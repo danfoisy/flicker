@@ -1,0 +1,23 @@
+	component FrameBuf_lg is
+		port (
+			mem_clk1_clk      : in  std_logic                     := 'X';             -- clk
+			mem_clk2_clk      : in  std_logic                     := 'X';             -- clk
+			mem_rst1_reset    : in  std_logic                     := 'X';             -- reset
+			mem_rst2_reset    : in  std_logic                     := 'X';             -- reset
+			mem_s1_address    : in  std_logic_vector(13 downto 0) := (others => 'X'); -- address
+			mem_s1_clken      : in  std_logic                     := 'X';             -- clken
+			mem_s1_chipselect : in  std_logic                     := 'X';             -- chipselect
+			mem_s1_write      : in  std_logic                     := 'X';             -- write
+			mem_s1_readdata   : out std_logic_vector(15 downto 0);                    -- readdata
+			mem_s1_writedata  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			mem_s1_byteenable : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- byteenable
+			mem_s2_address    : in  std_logic_vector(13 downto 0) := (others => 'X'); -- address
+			mem_s2_chipselect : in  std_logic                     := 'X';             -- chipselect
+			mem_s2_clken      : in  std_logic                     := 'X';             -- clken
+			mem_s2_write      : in  std_logic                     := 'X';             -- write
+			mem_s2_readdata   : out std_logic_vector(15 downto 0);                    -- readdata
+			mem_s2_writedata  : in  std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			mem_s2_byteenable : in  std_logic_vector(1 downto 0)  := (others => 'X')  -- byteenable
+		);
+	end component FrameBuf_lg;
+

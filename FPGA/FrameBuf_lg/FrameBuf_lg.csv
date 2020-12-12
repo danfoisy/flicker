@@ -1,0 +1,19 @@
+# system info FrameBuf_lg on 2019.09.02.12:15:29
+system_info:
+name,value
+DEVICE,10CL010YE144I7G
+DEVICE_FAMILY,Cyclone 10 LP
+GENERATION_ID,1567440928
+#
+#
+# Files generated for FrameBuf_lg on 2019.09.02.12:15:29
+files:
+filepath,kind,attributes,module,is_top
+simulation/FrameBuf_lg.v,VERILOG,,FrameBuf_lg,true
+simulation/submodules/FrameBuf_lg_onchip_memory2_0.hex,HEX,,FrameBuf_lg_onchip_memory2_0,false
+simulation/submodules/FrameBuf_lg_onchip_memory2_0.v,VERILOG,,FrameBuf_lg_onchip_memory2_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+FrameBuf_lg.onchip_memory2_0,FrameBuf_lg_onchip_memory2_0

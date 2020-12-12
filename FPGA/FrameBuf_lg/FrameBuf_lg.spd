@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/FrameBuf_lg_onchip_memory2_0.hex"
+   type="HEX"
+   library="onchip_memory2_0" />
+ <file
+   path="simulation/submodules/FrameBuf_lg_onchip_memory2_0.v"
+   type="VERILOG"
+   library="onchip_memory2_0" />
+ <file path="simulation/FrameBuf_lg.v" type="VERILOG" />
+ <topLevel name="FrameBuf_lg" />
+ <deviceFamily name="cyclone10lp" />
+ <modelMap
+   controllerPath="FrameBuf_lg.onchip_memory2_0"
+   modelPath="FrameBuf_lg.onchip_memory2_0" />
+</simPackage>

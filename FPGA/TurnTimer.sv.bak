@@ -1,0 +1,85 @@
+module TurnTimer #(CLK_FREQ, FPS, IMG_HEIGHT) (
+		input clk,
+		input nReset,
+		
+		input mag,
+		
+		output reg [$bits(IMG_HEIGHT)] row
+	);
+	
+	reg [4] i_state;
+	reg [$bits(CLK_FREQ/FPS)*2] cnt;
+	reg init;
+	reg error;
+	reg [$bits(CLK_FREQ/IMG_HEIGHT)*2] step;
+	reg [$bits(CLK_FREQ/IMG_HEIGHT)*2] stepCnt;
+	
+	
+	always_ff@(posedge clk) begin: TURN_FSM
+		if(!nReset) begin
+			i_state <= 4'd0;
+			init <= '0;
+			cnt <= '0;
+			error <= '0;
+		end else begin
+			case (i_state)
+				4'd0:	
+					begin
+						init <= '0;
+						if(!mag)
+							i_state <= 4'd1;
+					end
+				4'd1:
+					begin
+						if(mag) begin
+							cnt <= 0;
+							i_state <= 4'd2;
+						end
+					end
+				4'd2:
+					begin
+						cnt <= cnt + 1'd1;
+						
+						if(cnt == CLK_FREQ/FPS*2) begin
+							error <= '1;
+							i_state <= 4'd0;
+						end
+						
+						if(!mag) begin
+							i_state <= 4'd3;
+						end
+						
+						if(init) begin
+							stepCnt <= stepCnt + 1'd1;
+							
+							if(stepCnt == CLK_FREQ/IMG_HEIGHT*2) begin
+								error <= '1;
+								i_state <= 4'd0;
+							end
+							
+							
+								
+						end
+					end
+				4'd3:
+					begin
+						cnt <= cnt + 1'd1;
+						
+						if(cnt == CLK_FREQ/FPS*2) begin
+							error <= '1;
+							i_state <= 4'd0;
+						end
+						
+						if(mag) begin
+							i_state <= 4'd2;
+							error <= '0;
+							init <= '1;
+						end
+					end
+				4'd4:
+					begin
+					
+					end
+			endcase	
+endmodule
+	

@@ -1,0 +1,138 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim
+valtera_reset_controller
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1575942338
+!i10b 1
+!s100 BY0`7TD<QPSCOO[`H0GM11
+I?z>FGoM7lOGUWziJ4MRiT1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 altera_reset_controller_v_unit
+S1
+R0
+Z4 w1569699354
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_controller.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_controller.v
+L0 42
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1575942338.000000
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-sv|-work|SDRAM|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+Z7 o-sv -work SDRAM
+Z8 !s92 -sv -work SDRAM +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules
+Z9 tCvgOpt 0
+valtera_reset_synchronizer
+R1
+R2
+!i10b 1
+!s100 jGF0G[N3WmCeE44bVz8Kc3
+I=j>]o_l7FO_YQn7n@CPAC0
+R3
+!s105 altera_reset_synchronizer_v_unit
+S1
+R0
+R4
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_synchronizer.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-sv|-work|SDRAM|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+vSDRAM
+R1
+R2
+!i10b 1
+!s100 n1Zh=3ePh5P1dfSKm2@2O2
+Ik2DKI;nZ@n0oOcQOIIAKR0
+R3
+!s105 SDRAM_v_unit
+S1
+R0
+w1569699353
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/SDRAM.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/SDRAM.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/SDRAM.v|
+!s90 -reportprogress|300|-sv|-work|SDRAM|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/SDRAM.v|
+!i113 1
+R7
+!s92 -sv -work SDRAM +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis
+R9
+n@s@d@r@a@m
+vSDRAM_SDRAM
+R1
+R2
+!i10b 1
+!s100 ;`dQzgUz@RB?YFd@3J?:j1
+IB4A7hJ5W;V;F6J@8YVj9b3
+R3
+Z10 !s105 SDRAM_SDRAM_v_unit
+S1
+R0
+R4
+Z11 8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/SDRAM_SDRAM.v
+Z12 FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/SDRAM_SDRAM.v
+L0 159
+R5
+r1
+!s85 0
+31
+R6
+Z13 !s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/SDRAM_SDRAM.v|
+Z14 !s90 -reportprogress|300|-sv|-work|SDRAM|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/SDRAM/synthesis/submodules/SDRAM_SDRAM.v|
+!i113 1
+R7
+R8
+R9
+n@s@d@r@a@m_@s@d@r@a@m
+vSDRAM_SDRAM_input_efifo_module
+R1
+R2
+!i10b 1
+!s100 nXSaH[UOJlbW5P;QGU[1R3
+I7zeSN@OKQU]:ZY23GJW4m0
+R3
+R10
+S1
+R0
+R4
+R11
+R12
+L0 21
+R5
+r1
+!s85 0
+31
+R6
+R13
+R14
+!i113 1
+R7
+R8
+R9
+n@s@d@r@a@m_@s@d@r@a@m_input_efifo_module

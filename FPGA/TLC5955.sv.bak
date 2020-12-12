@@ -1,0 +1,61 @@
+module TLC5955 (
+		input						CLK,
+		input 					nRESET,
+		input						FIRST,
+		input						START,
+		input [7:0]				DATA,
+		input						CTRL,
+		output logic 			SCLK,
+		output logic 		  	SDO,
+		output reg				DONE
+	);
+	
+	
+	reg [3:0] m_state;
+	reg [3:0] txLen;
+	always_ff@(posedge CLK) begin: TLC5955_FSM
+		if(!nReset) begin
+			m_state <= 4'b0000;
+			SCLK <= '0;
+			DONE <= '0;
+		end else begin
+			case (m_state)
+				4'b0000:
+					begin
+						DONE <= '0;
+						SCLK <= '0;
+						if(START) begin
+							txLen <= 8;
+							if(FIRST) begin
+								SDO <= CTRL;
+							end else begin
+								txLen <= 7;
+								SDO <= DATA[7];
+							end
+							m_state <= 4'b0001;
+						end
+					end
+				4'b0001:
+					begin
+						SCLK <= '1;
+						
+						txLen <= txLen - 1'b1;
+						
+						if(txLen == '0) begin
+							m_state <= 4'b0000;
+							DONE <= '1;
+						end else begin
+							m_state <= 4'b0010;
+						end
+							
+					end
+				4'b0010:
+					begin
+						SCLK <= '0;
+						
+					end
+			endcase
+		end
+	end
+	
+

@@ -1,0 +1,19 @@
+# system info sdram on 2019.07.21.15:29:12
+system_info:
+name,value
+DEVICE,10CL010YE144I7G
+DEVICE_FAMILY,Cyclone 10 LP
+GENERATION_ID,1563737351
+#
+#
+# Files generated for sdram on 2019.07.21.15:29:12
+files:
+filepath,kind,attributes,module,is_top
+simulation/sdram.v,VERILOG,,sdram,true
+simulation/submodules/sdram_new_sdram_controller_0.v,VERILOG,,sdram_new_sdram_controller_0,false
+simulation/submodules/sdram_new_sdram_controller_0_test_component.v,VERILOG,,sdram_new_sdram_controller_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+sdram.new_sdram_controller_0,sdram_new_sdram_controller_0

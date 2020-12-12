@@ -1,0 +1,11 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst Pll.altpll_0 -pg 1 -lvl 1 -y 30
+preplace inst Pll -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>Pll</net_container>(MASTER)altpll_0.c0,(MASTER)Pll.sdram_clk) 1 1 1 NJ
+preplace netloc EXPORT<net_container>Pll</net_container>(SLAVE)Pll.clk_rst,(SLAVE)altpll_0.inclk_interface_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Pll</net_container>(MASTER)altpll_0.c2,(MASTER)Pll.gsclk) 1 1 1 NJ
+preplace netloc EXPORT<net_container>Pll</net_container>(SLAVE)Pll.clk_in,(SLAVE)altpll_0.inclk_interface) 1 0 1 NJ
+preplace netloc EXPORT<net_container>Pll</net_container>(MASTER)altpll_0.c1,(MASTER)Pll.sclk_x2) 1 1 1 NJ
+levelinfo -pg 1 0 60 380
+levelinfo -hier Pll 70 100 290

@@ -1,0 +1,38 @@
+module Video #(IMG_WIDTH, IMG_HEIGHT) (
+		input nReset,
+
+		input PIXCLK,
+		input [23:0] QE,
+		input VSYNC,
+		input HSYNC,
+		
+		input rdclk,
+		input rdreq,
+		
+		output [15:0] data,
+		output dataAvailable,
+		
+		output [21:0] address
+	);
+	
+	logic [8:0] rdusedw;
+	
+	module VidFifo (
+		.aclr('0),
+		
+		.data(),
+		.wrclk(PIXCLK),
+		.wrreq('1),
+		.wrfull(),
+		
+		.rdclk,
+		.rdreq,
+		.rdusedw,
+		.q(data)
+		
+	);
+	
+	assign dataAvailable = rdusedw >= 9'8;
+	
+	
+endmodule

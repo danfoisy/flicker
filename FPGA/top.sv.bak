@@ -1,0 +1,28 @@
+module blink(
+	input CLK_10M,
+	output logic miso );
+	
+	reg [23:0] cnt;
+	
+	reg led  = 1'h0;
+
+	assign miso = led;
+	
+
+	
+	always_ff @(posedge CLK_10M) begin
+
+		if(cnt === 24'd12000000)
+			cnt<= 0;
+		else
+			cnt<=cnt+1;
+
+	end
+	
+	always_ff @(posedge CLK_10M) begin
+	
+		if(cnt == 24'd0)
+			led <= ~led;
+	end
+	
+endmodule

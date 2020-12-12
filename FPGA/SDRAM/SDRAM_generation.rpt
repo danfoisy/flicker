@@ -1,0 +1,38 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\projects\flicker2\fpga\vidtest-SDRAM\SDRAM.qsys --block-symbol-file --output-directory=D:\projects\flicker2\fpga\vidtest-SDRAM\SDRAM --family="Cyclone 10 LP" --part=10CL010YE144I7G
+Progress: Loading vidtest-SDRAM/SDRAM.qsys
+Progress: Reading input file
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module SDRAM
+Progress: Adding SDRAM_clk [clock_source 18.1]
+Progress: Parameterizing module SDRAM_clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SDRAM.SDRAM: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\projects\flicker2\fpga\vidtest-SDRAM\SDRAM.qsys --synthesis=VERILOG --output-directory=D:\projects\flicker2\fpga\vidtest-SDRAM\SDRAM\synthesis --family="Cyclone 10 LP" --part=10CL010YE144I7G
+Progress: Loading vidtest-SDRAM/SDRAM.qsys
+Progress: Reading input file
+Progress: Adding SDRAM [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module SDRAM
+Progress: Adding SDRAM_clk [clock_source 18.1]
+Progress: Parameterizing module SDRAM_clk
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: SDRAM.SDRAM: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: SDRAM: Generating SDRAM "SDRAM" for QUARTUS_SYNTH
+Info: SDRAM: Starting RTL generation for module 'SDRAM_SDRAM'
+Info: SDRAM:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=SDRAM_SDRAM --dir=C:/Users/danfo/AppData/Local/Temp/alt8167_7571524899963648206.dir/0002_SDRAM_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/danfo/AppData/Local/Temp/alt8167_7571524899963648206.dir/0002_SDRAM_gen//SDRAM_SDRAM_component_configuration.pl  --do_build_sim=0  ]
+Info: SDRAM: Done RTL generation for module 'SDRAM_SDRAM'
+Info: SDRAM: "SDRAM" instantiated altera_avalon_new_sdram_controller "SDRAM"
+Info: rst_controller: "SDRAM" instantiated altera_reset_controller "rst_controller"
+Info: SDRAM: Done "SDRAM" with 3 modules, 5 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

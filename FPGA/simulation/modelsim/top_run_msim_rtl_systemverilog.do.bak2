@@ -1,0 +1,23 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlib FrameBuf
+vmap FrameBuf FrameBuf
+vlog -sv -work FrameBuf +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/FrameBuf/synthesis {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/FrameBuf/synthesis/FrameBuf.v}
+vlog -sv -work FrameBuf +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/FrameBuf/synthesis/submodules {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/FrameBuf/synthesis/submodules/FrameBuf_onchip_memory2_0.v}
+vlib Pll
+vmap Pll Pll
+vlog -sv -work Pll +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/Pll.v}
+vlog -sv -work Pll +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/pll/synthesis/submodules/Pll_altpll_0.v}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TLC5955.sv}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LED.sv}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/InitLed.sv}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedCtrl.sv}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/Reset.sv}
+vlog -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram {D:/projects/flicker2/fpga/vidframetest-RPi-sdram/top.sv}
+

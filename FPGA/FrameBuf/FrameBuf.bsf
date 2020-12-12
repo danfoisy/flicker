@@ -1,0 +1,200 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 352 496)
+	(text "FrameBuf" (rect 147 -1 188 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 480 20 492)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "mem_clk1_clk" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "mem_clk1_clk" (rect 4 61 76 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 144 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "mem_clk2_clk" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "mem_clk2_clk" (rect 4 101 76 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 144 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "mem_rst1_reset" (rect 0 0 67 12)(font "Arial" (font_size 8)))
+		(text "mem_rst1_reset" (rect 4 141 88 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 144 152)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "mem_rst2_reset" (rect 0 0 68 12)(font "Arial" (font_size 8)))
+		(text "mem_rst2_reset" (rect 4 181 88 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 144 192)(line_width 1))
+	)
+	(port
+		(pt 0 232)
+		(input)
+		(text "mem_s1_address[12..0]" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_address[12..0]" (rect 4 221 130 232)(font "Arial" (font_size 8)))
+		(line (pt 0 232)(pt 144 232)(line_width 3))
+	)
+	(port
+		(pt 0 248)
+		(input)
+		(text "mem_s1_clken" (rect 0 0 61 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_clken" (rect 4 237 76 248)(font "Arial" (font_size 8)))
+		(line (pt 0 248)(pt 144 248)(line_width 1))
+	)
+	(port
+		(pt 0 264)
+		(input)
+		(text "mem_s1_chipselect" (rect 0 0 79 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_chipselect" (rect 4 253 106 264)(font "Arial" (font_size 8)))
+		(line (pt 0 264)(pt 144 264)(line_width 1))
+	)
+	(port
+		(pt 0 280)
+		(input)
+		(text "mem_s1_write" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_write" (rect 4 269 76 280)(font "Arial" (font_size 8)))
+		(line (pt 0 280)(pt 144 280)(line_width 1))
+	)
+	(port
+		(pt 0 312)
+		(input)
+		(text "mem_s1_writedata[15..0]" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_writedata[15..0]" (rect 4 301 142 312)(font "Arial" (font_size 8)))
+		(line (pt 0 312)(pt 144 312)(line_width 3))
+	)
+	(port
+		(pt 0 328)
+		(input)
+		(text "mem_s1_byteenable[1..0]" (rect 0 0 102 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_byteenable[1..0]" (rect 4 317 142 328)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 144 328)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "mem_s2_address[12..0]" (rect 0 0 97 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_address[12..0]" (rect 4 357 130 368)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 144 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "mem_s2_chipselect" (rect 0 0 80 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_chipselect" (rect 4 373 106 384)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 144 384)(line_width 1))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "mem_s2_clken" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_clken" (rect 4 389 76 400)(font "Arial" (font_size 8)))
+		(line (pt 0 400)(pt 144 400)(line_width 1))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "mem_s2_write" (rect 0 0 60 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_write" (rect 4 405 76 416)(font "Arial" (font_size 8)))
+		(line (pt 0 416)(pt 144 416)(line_width 1))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "mem_s2_writedata[15..0]" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_writedata[15..0]" (rect 4 437 142 448)(font "Arial" (font_size 8)))
+		(line (pt 0 448)(pt 144 448)(line_width 3))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "mem_s2_byteenable[1..0]" (rect 0 0 103 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_byteenable[1..0]" (rect 4 453 142 464)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 144 464)(line_width 3))
+	)
+	(port
+		(pt 0 296)
+		(output)
+		(text "mem_s1_readdata[15..0]" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_readdata[15..0]" (rect 4 285 136 296)(font "Arial" (font_size 8)))
+		(line (pt 0 296)(pt 144 296)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(output)
+		(text "mem_s2_readdata[15..0]" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_readdata[15..0]" (rect 4 421 136 432)(font "Arial" (font_size 8)))
+		(line (pt 0 432)(pt 144 432)(line_width 3))
+	)
+	(drawing
+		(text "mem_clk1" (rect 87 43 222 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 67 316 144)(font "Arial" (color 0 0 0)))
+		(text "mem_clk2" (rect 85 83 218 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 107 316 224)(font "Arial" (color 0 0 0)))
+		(text "mem_rst1" (rect 87 123 222 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 149 147 328 304)(font "Arial" (color 0 0 0)))
+		(text "mem_rst2" (rect 85 163 218 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 149 187 328 384)(font "Arial" (color 0 0 0)))
+		(text "mem_s1" (rect 96 203 228 419)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 149 227 340 464)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 149 243 328 496)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 149 259 358 528)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 149 275 328 560)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 149 291 346 592)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 149 307 352 624)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 149 323 358 656)(font "Arial" (color 0 0 0)))
+		(text "mem_s2" (rect 94 339 224 691)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 149 363 340 736)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 149 379 358 768)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 149 395 328 800)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 149 411 328 832)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 149 427 346 864)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 149 443 352 896)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 149 459 358 928)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 317 480 682 970)(font "Arial" ))
+		(line (pt 144 32)(pt 208 32)(line_width 1))
+		(line (pt 208 32)(pt 208 480)(line_width 1))
+		(line (pt 144 480)(pt 208 480)(line_width 1))
+		(line (pt 144 32)(pt 144 480)(line_width 1))
+		(line (pt 145 52)(pt 145 76)(line_width 1))
+		(line (pt 146 52)(pt 146 76)(line_width 1))
+		(line (pt 145 92)(pt 145 116)(line_width 1))
+		(line (pt 146 92)(pt 146 116)(line_width 1))
+		(line (pt 145 132)(pt 145 156)(line_width 1))
+		(line (pt 146 132)(pt 146 156)(line_width 1))
+		(line (pt 145 172)(pt 145 196)(line_width 1))
+		(line (pt 146 172)(pt 146 196)(line_width 1))
+		(line (pt 145 212)(pt 145 332)(line_width 1))
+		(line (pt 146 212)(pt 146 332)(line_width 1))
+		(line (pt 145 348)(pt 145 468)(line_width 1))
+		(line (pt 146 348)(pt 146 468)(line_width 1))
+		(line (pt 0 0)(pt 352 0)(line_width 1))
+		(line (pt 352 0)(pt 352 496)(line_width 1))
+		(line (pt 0 496)(pt 352 496)(line_width 1))
+		(line (pt 0 0)(pt 0 496)(line_width 1))
+	)
+)

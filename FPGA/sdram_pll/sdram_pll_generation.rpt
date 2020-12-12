@@ -1,0 +1,44 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\projects\flicker2\fpga\test5\sdram_pll.qsys --block-symbol-file --output-directory=D:\projects\flicker2\fpga\test5\sdram_pll --family="Cyclone 10 LP" --part=10CL006YE144A7G
+Progress: Loading test5/sdram_pll.qsys
+Progress: Reading input file
+Progress: Adding pll [altpll 18.1]
+Progress: Parameterizing module pll
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram_pll.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Warning: sdram_pll.pll: pll.pll_slave must be connected to an Avalon-MM master
+Warning: sdram_pll.: You have exported the interface sdram.reset but not its associated clock interface.  Export the driver of sdram.clk
+Warning: sdram_pll.: You have exported the interface sdram.s1 but not its associated clock interface.  Export the driver of sdram.clk
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\projects\flicker2\fpga\test5\sdram_pll.qsys --synthesis=VERILOG --output-directory=D:\projects\flicker2\fpga\test5\sdram_pll\synthesis --family="Cyclone 10 LP" --part=10CL006YE144A7G
+Progress: Loading test5/sdram_pll.qsys
+Progress: Reading input file
+Progress: Adding pll [altpll 18.1]
+Progress: Parameterizing module pll
+Progress: Adding sdram [altera_avalon_new_sdram_controller 18.1]
+Progress: Parameterizing module sdram
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram_pll.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Warning: sdram_pll.pll: pll.pll_slave must be connected to an Avalon-MM master
+Warning: sdram_pll.: You have exported the interface sdram.reset but not its associated clock interface.  Export the driver of sdram.clk
+Warning: sdram_pll.: You have exported the interface sdram.s1 but not its associated clock interface.  Export the driver of sdram.clk
+Info: sdram_pll: Generating sdram_pll "sdram_pll" for QUARTUS_SYNTH
+Info: pll: "sdram_pll" instantiated altpll "pll"
+Info: sdram: Starting RTL generation for module 'sdram_pll_sdram'
+Info: sdram:   Generation command is [exec D:/intelfpga_lite/18.1/quartus/bin64/perl/bin/perl.exe -I D:/intelfpga_lite/18.1/quartus/bin64/perl/lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/europa -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin/perl_lib -I D:/intelfpga_lite/18.1/quartus/sopc_builder/bin -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- D:/intelfpga_lite/18.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sdram_pll_sdram --dir=C:/Users/danfo/AppData/Local/Temp/alt7974_2360407208717355318.dir/0004_sdram_gen/ --quartus_dir=D:/intelfpga_lite/18.1/quartus --verilog --config=C:/Users/danfo/AppData/Local/Temp/alt7974_2360407208717355318.dir/0004_sdram_gen//sdram_pll_sdram_component_configuration.pl  --do_build_sim=0  ]
+Info: sdram: Done RTL generation for module 'sdram_pll_sdram'
+Info: sdram: "sdram_pll" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: sdram_pll: Done "sdram_pll" with 3 modules, 3 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

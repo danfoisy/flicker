@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/sdram_new_sdram_controller_0.v"
+   type="VERILOG"
+   library="new_sdram_controller_0" />
+ <file
+   path="simulation/submodules/sdram_new_sdram_controller_0_test_component.v"
+   type="VERILOG"
+   library="new_sdram_controller_0" />
+ <file path="simulation/sdram.v" type="VERILOG" />
+ <topLevel name="sdram" />
+ <deviceFamily name="cyclone10lp" />
+</simPackage>

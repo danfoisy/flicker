@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/intelFPGA_lite/18.1
+vInitLed
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1563154338
+!i10b 1
+!s100 nN=h=kOM[?`5PCm:0RDK_2
+IEB4@:HWWWSk;JkeM5Bgh`3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 InitLed_sv_unit
+S1
+Z3 dD:/projects/flicker2/fpga/spintest/ledtest_wb
+Z4 w1563151781
+8D:/projects/flicker2/fpga/spintest/InitLed.sv
+FD:/projects/flicker2/fpga/spintest/InitLed.sv
+L0 1
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1563154338.000000
+!s107 D:/projects/flicker2/fpga/spintest/InitLed.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/projects/flicker2/fpga/spintest/InitLed.sv|
+!i113 1
+Z7 o-work work -sv
+Z8 tCvgOpt 0
+n@init@led
+vLED
+R0
+R1
+!i10b 1
+!s100 Ai0VGV[ecDM692fhaQeVD0
+I7K<1ChPgR8T``GeG[JgM51
+R2
+!s105 LED_sv_unit
+S1
+R3
+w1563154283
+8D:/projects/flicker2/fpga/spintest/LED.sv
+FD:/projects/flicker2/fpga/spintest/LED.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/projects/flicker2/fpga/spintest/LED.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/projects/flicker2/fpga/spintest/LED.sv|
+!i113 1
+R7
+R8
+n@l@e@d
+vLedCtrl
+R0
+!s110 1563154339
+!i10b 1
+!s100 81ONSHnLTCAzBPIf[lW3n3
+IKF5KiAaCGbEnA<cN@Zk1N2
+R2
+!s105 LedCtrl_sv_unit
+S1
+R3
+R4
+8D:/projects/flicker2/fpga/spintest/LedCtrl.sv
+FD:/projects/flicker2/fpga/spintest/LedCtrl.sv
+L0 1
+R5
+r1
+!s85 0
+31
+!s108 1563154339.000000
+!s107 D:/projects/flicker2/fpga/spintest/LedCtrl.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/projects/flicker2/fpga/spintest/LedCtrl.sv|
+!i113 1
+R7
+R8
+n@led@ctrl
+vTLC5955
+R0
+R1
+!i10b 1
+!s100 bE@IC^FUE:Ad?5BF<W]cL0
+I6LdfUZa8FnU2BnXd`8Gl32
+R2
+!s105 TLC5955_sv_unit
+S1
+R3
+w1562291157
+8D:/projects/flicker2/fpga/spintest/TLC5955.sv
+FD:/projects/flicker2/fpga/spintest/TLC5955.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/projects/flicker2/fpga/spintest/TLC5955.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/projects/flicker2/fpga/spintest/TLC5955.sv|
+!i113 1
+R7
+R8
+n@t@l@c5955
+vtop
+R0
+R1
+!i10b 1
+!s100 ZieH>gFKB;hP4N^M[a2b=1
+IZMIFQeCgf[VfC<MW<@h8_1
+R2
+!s105 ledtest_tb_sv_unit
+S1
+R3
+w1562203013
+8D:/projects/flicker2/fpga/spintest/ledtest_wb/ledtest_tb.sv
+FD:/projects/flicker2/fpga/spintest/ledtest_wb/ledtest_tb.sv
+L0 1
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/projects/flicker2/fpga/spintest/ledtest_wb/ledtest_tb.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/projects/flicker2/fpga/spintest/ledtest_wb/ledtest_tb.sv|
+!i113 1
+R7
+R8

@@ -1,0 +1,28 @@
+module Reset(
+		output reg nReset
+	);
+	
+	// reset logic
+	reg [1:0] r_state = '0;
+	always_ff@(posedge clk) begin	: init_logic
+		case (r_state)
+			2'd0: 
+				begin
+					r_state <= 2'd1;
+					nReset <= 1'b0;
+				end
+			2'd1:
+				begin
+					nReset <= 1'b1;
+					r_state <= 2'd2;
+					
+				end
+			2'd2:
+				begin
+				end
+			default:
+				r_state <= 2'd0;
+		endcase
+	end
+	
+endmodule

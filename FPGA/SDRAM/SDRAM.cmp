@@ -1,0 +1,25 @@
+	component SDRAM is
+		port (
+			clk_clk                : in    std_logic                     := 'X';             -- clk
+			reset_reset_n          : in    std_logic                     := 'X';             -- reset_n
+			sdram_s1_address       : in    std_logic_vector(23 downto 0) := (others => 'X'); -- address
+			sdram_s1_byteenable_n  : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- byteenable_n
+			sdram_s1_chipselect    : in    std_logic                     := 'X';             -- chipselect
+			sdram_s1_writedata     : in    std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			sdram_s1_read_n        : in    std_logic                     := 'X';             -- read_n
+			sdram_s1_write_n       : in    std_logic                     := 'X';             -- write_n
+			sdram_s1_readdata      : out   std_logic_vector(15 downto 0);                    -- readdata
+			sdram_s1_readdatavalid : out   std_logic;                                        -- readdatavalid
+			sdram_s1_waitrequest   : out   std_logic;                                        -- waitrequest
+			sdram_wire_addr        : out   std_logic_vector(12 downto 0);                    -- addr
+			sdram_wire_ba          : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_wire_cas_n       : out   std_logic;                                        -- cas_n
+			sdram_wire_cke         : out   std_logic;                                        -- cke
+			sdram_wire_cs_n        : out   std_logic;                                        -- cs_n
+			sdram_wire_dq          : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdram_wire_dqm         : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdram_wire_ras_n       : out   std_logic;                                        -- ras_n
+			sdram_wire_we_n        : out   std_logic                                         -- we_n
+		);
+	end component SDRAM;
+

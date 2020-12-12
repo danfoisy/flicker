@@ -1,0 +1,3 @@
+/top/spiClk   	  1	I O   # Pin direction unknown - use I/O clause
+/top/SDO      	  2	O
+/top/LAT      	  3	O

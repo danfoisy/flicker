@@ -1,0 +1,56 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\projects\flicker2\fpga\vidframetest\Pll.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=D:\projects\flicker2\fpga\vidframetest\Sdram\simulation --family="Cyclone 10 LP" --part=10CL010YE144I7G
+Progress: Loading vidframetest/Pll.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 18.1]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Pll.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: Pll: Generating Pll "Pll" for SIM_VERILOG
+Info: altpll_0: Generating Verilog simulation model
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: altpll_0: Generated simulation model Pll_altpll_0.vo
+Info: altpll_0: "Pll" instantiated altpll "altpll_0"
+Info: Pll: Done "Pll" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\projects\flicker2\fpga\vidframetest\Sdram\Pll.spd --output-directory=D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\projects\flicker2\fpga\vidframetest\Sdram\Pll.spd --output-directory=D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/projects/flicker2/fpga/vidframetest/Sdram/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\projects\flicker2\fpga\vidframetest\Pll.qsys --synthesis=VERILOG --output-directory=D:\projects\flicker2\fpga\vidframetest\Sdram\synthesis --family="Cyclone 10 LP" --part=10CL010YE144I7G
+Progress: Loading vidframetest/Pll.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 18.1]
+Progress: Parameterizing module altpll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: Pll.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Info: Pll: Generating Pll "Pll" for QUARTUS_SYNTH
+Info: altpll_0: "Pll" instantiated altpll "altpll_0"
+Info: Pll: Done "Pll" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

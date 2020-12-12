@@ -1,0 +1,22 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  RTL
+Family                :  cyclone10lp
+Quartus root          :  d:/intelfpga_lite/18.1/quartus/bin64/
+Quartus sim root      :  d:/intelfpga_lite/18.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  systemverilog
+Simulation Mode       :  GUI
+Sim Output File       :  
+Sim SDF file          :  
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script d:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File top_run_msim_rtl_systemverilog.do already exists - backing up current file as top_run_msim_rtl_systemverilog.do.bak8
+Info: Spawning ModelSim-Altera Simulation software 
+Info: NativeLink simulation flow was successful

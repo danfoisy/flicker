@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +Vled
+D Power flag
+K power-flag
+$ENDCMP
+#
+$CMP LTST-C19HE1WT
+D Tricolor Black Surface LED, Common Anode Pin 1, PLCC-4
+K led rgb diode
+F https://docs.broadcom.com/docs/AV02-4186EN
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,18 @@
+# system info Pll on 2019.07.21.20:58:14
+system_info:
+name,value
+DEVICE,10CL010YE144I7G
+DEVICE_FAMILY,Cyclone 10 LP
+GENERATION_ID,1563757083
+#
+#
+# Files generated for Pll on 2019.07.21.20:58:14
+files:
+filepath,kind,attributes,module,is_top
+simulation/Pll.v,VERILOG,,Pll,true
+simulation/submodules/Pll_altpll_0.vo,VERILOG,,Pll_altpll_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+Pll.altpll_0,Pll_altpll_0

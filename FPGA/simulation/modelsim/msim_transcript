@@ -1,0 +1,117 @@
+# vsim -gui -l msim_transcript work.top 
+# Start time: 20:46:07 on Dec 09,2019
+# Loading sv_std.std
+# Loading work.top
+# Loading work.TurnTimer
+add wave -position end  sim:/top/clk
+add wave -position end  sim:/top/nReset
+add wave -position end  sim:/top/row
+add wave -position end  sim:/top/rowEven
+add wave -position end  sim:/top/valid
+add wave -position end  sim:/top/index
+add wave -position end  sim:/top/rowChange
+add wave -position end  sim:/top/mag
+run
+run
+add wave -position end  sim:/top/turnTimer/magIdx
+add wave -position end  sim:/top/turnTimer/i_state
+add wave -position end  sim:/top/turnTimer/cnt
+add wave -position end  sim:/top/turnTimer/error
+add wave -position end  sim:/top/turnTimer/step
+add wave -position end  sim:/top/turnTimer/nextStep
+add wave -position end  sim:/top/turnTimer/stepCnt
+add wave -position end  sim:/top/turnTimer/magChange
+add wave -position end  sim:/top/turnTimer/oldMag
+add wave -position end  sim:/top/turnTimer/magValid
+restart
+run
+# Compile of TurnTimerTop.sv was successful.
+# Compile of TurnTimer.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Compile of TurnTimerTop.sv was successful.
+restart
+# Loading work.top
+# Loading work.TurnTimer
+run
+# Compile of TurnTimerTop.sv was successful.
+restart
+# Loading work.top
+run
+run
+# Compile of TurnTimer.sv was successful.
+restart
+# Loading work.TurnTimer
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+# Compile of TurnTimerTop.sv was successful.
+# Compile of TurnTimer.sv was successful.
+# 2 compiles, 0 failed with no errors.
+restart
+# Loading work.top
+# Loading work.TurnTimer
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+# Compile of TurnTimerTop.sv was successful.
+restart
+# Loading work.top
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+run
+restart
+# ** Warning: (vsim-3017) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Too few port connections. Expected 9, found 8.
+#    Time: 0 ps  Iteration: 0  Instance: /top/turnTimer File: D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+# ** Warning: (vsim-3722) D:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim/TurnTimerTop.sv(32): [TFMPC] - Missing connection for port 'rowChangeAck'.
+# Compile of TurnTimerTop.sv was successful.
+run
+# End time: 21:09:04 on Dec 13,2019, Elapsed time: 96:22:57
+# Errors: 0, Warnings: 26

@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name flicker)(type Legacy)(uri ${KIPRJMOD}/flicker.lib)(options "")(descr ""))
+  (lib (name flicker-rescue)(type Legacy)(uri ${KIPRJMOD}/flicker-rescue.lib)(options "")(descr ""))
+  (lib (name 100-fpga-rescue)(type Legacy)(uri ${KIPRJMOD}/100-fpga-rescue.lib)(options "")(descr ""))
+)

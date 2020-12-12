@@ -1,0 +1,5 @@
+LAT = St0
+SCLK = St0
+SDO = St0
+nReset = 1
+spiClk = 0

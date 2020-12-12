@@ -1,0 +1,178 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 352 416)
+	(text "FrameBuf" (rect 147 -1 188 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 400 20 412)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "mem_s1_address[12..0]" (rect 0 0 96 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_address[12..0]" (rect 4 61 130 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 144 72)(line_width 3))
+	)
+	(port
+		(pt 0 88)
+		(input)
+		(text "mem_s1_clken" (rect 0 0 61 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_clken" (rect 4 77 76 88)(font "Arial" (font_size 8)))
+		(line (pt 0 88)(pt 144 88)(line_width 1))
+	)
+	(port
+		(pt 0 104)
+		(input)
+		(text "mem_s1_chipselect" (rect 0 0 79 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_chipselect" (rect 4 93 106 104)(font "Arial" (font_size 8)))
+		(line (pt 0 104)(pt 144 104)(line_width 1))
+	)
+	(port
+		(pt 0 120)
+		(input)
+		(text "mem_s1_write" (rect 0 0 59 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_write" (rect 4 109 76 120)(font "Arial" (font_size 8)))
+		(line (pt 0 120)(pt 144 120)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "mem_s1_writedata[15..0]" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_writedata[15..0]" (rect 4 141 142 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 144 152)(line_width 3))
+	)
+	(port
+		(pt 0 168)
+		(input)
+		(text "mem_s1_byteenable[1..0]" (rect 0 0 102 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_byteenable[1..0]" (rect 4 157 142 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 144 168)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "mem_s2_address[12..0]" (rect 0 0 97 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_address[12..0]" (rect 4 197 130 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 144 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "mem_s2_chipselect" (rect 0 0 80 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_chipselect" (rect 4 213 106 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 144 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "mem_s2_clken" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_clken" (rect 4 229 76 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 144 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "mem_s2_write" (rect 0 0 60 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_write" (rect 4 245 76 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 144 256)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "mem_s2_writedata[15..0]" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_writedata[15..0]" (rect 4 277 142 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 144 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "mem_s2_byteenable[1..0]" (rect 0 0 103 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_byteenable[1..0]" (rect 4 293 142 304)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 144 304)(line_width 3))
+	)
+	(port
+		(pt 0 344)
+		(input)
+		(text "mem_clk_clk" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "mem_clk_clk" (rect 4 333 70 344)(font "Arial" (font_size 8)))
+		(line (pt 0 344)(pt 144 344)(line_width 1))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "mem_rst_reset" (rect 0 0 63 12)(font "Arial" (font_size 8)))
+		(text "mem_rst_reset" (rect 4 373 82 384)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 144 384)(line_width 1))
+	)
+	(port
+		(pt 0 136)
+		(output)
+		(text "mem_s1_readdata[15..0]" (rect 0 0 99 12)(font "Arial" (font_size 8)))
+		(text "mem_s1_readdata[15..0]" (rect 4 125 136 136)(font "Arial" (font_size 8)))
+		(line (pt 0 136)(pt 144 136)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "mem_s2_readdata[15..0]" (rect 0 0 100 12)(font "Arial" (font_size 8)))
+		(text "mem_s2_readdata[15..0]" (rect 4 261 136 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 144 272)(line_width 3))
+	)
+	(drawing
+		(text "mem_s1" (rect 96 43 228 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 149 67 340 144)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 149 83 328 176)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 149 99 358 208)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 149 115 328 240)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 149 131 346 272)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 149 147 352 304)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 149 163 358 336)(font "Arial" (color 0 0 0)))
+		(text "mem_s2" (rect 94 179 224 371)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "address" (rect 149 203 340 416)(font "Arial" (color 0 0 0)))
+		(text "chipselect" (rect 149 219 358 448)(font "Arial" (color 0 0 0)))
+		(text "clken" (rect 149 235 328 480)(font "Arial" (color 0 0 0)))
+		(text "write" (rect 149 251 328 512)(font "Arial" (color 0 0 0)))
+		(text "readdata" (rect 149 267 346 544)(font "Arial" (color 0 0 0)))
+		(text "writedata" (rect 149 283 352 576)(font "Arial" (color 0 0 0)))
+		(text "byteenable" (rect 149 299 358 608)(font "Arial" (color 0 0 0)))
+		(text "mem_clk" (rect 92 315 226 643)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 149 339 316 688)(font "Arial" (color 0 0 0)))
+		(text "mem_rst" (rect 92 355 226 723)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 149 379 328 768)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 317 400 682 810)(font "Arial" ))
+		(line (pt 144 32)(pt 208 32)(line_width 1))
+		(line (pt 208 32)(pt 208 400)(line_width 1))
+		(line (pt 144 400)(pt 208 400)(line_width 1))
+		(line (pt 144 32)(pt 144 400)(line_width 1))
+		(line (pt 145 52)(pt 145 172)(line_width 1))
+		(line (pt 146 52)(pt 146 172)(line_width 1))
+		(line (pt 145 188)(pt 145 308)(line_width 1))
+		(line (pt 146 188)(pt 146 308)(line_width 1))
+		(line (pt 145 324)(pt 145 348)(line_width 1))
+		(line (pt 146 324)(pt 146 348)(line_width 1))
+		(line (pt 145 364)(pt 145 388)(line_width 1))
+		(line (pt 146 364)(pt 146 388)(line_width 1))
+		(line (pt 0 0)(pt 352 0)(line_width 1))
+		(line (pt 352 0)(pt 352 416)(line_width 1))
+		(line (pt 0 416)(pt 352 416)(line_width 1))
+		(line (pt 0 0)(pt 0 416)(line_width 1))
+	)
+)

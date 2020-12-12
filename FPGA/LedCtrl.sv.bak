@@ -1,0 +1,13 @@
+module LedCtrl(
+		input clk,
+		input nReset,
+
+		input done,
+		
+		output reg start,
+		output reg [4:0] len,
+		output reg [15:0] data,
+		output reg LAT,
+		
+		output reg initDone
+	);

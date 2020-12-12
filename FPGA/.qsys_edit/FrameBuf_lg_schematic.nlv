@@ -1,0 +1,12 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst FrameBuf.onchip_memory2_0 -pg 1 -lvl 1 -y 30
+preplace inst FrameBuf -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>FrameBuf</net_container>(SLAVE)FrameBuf.mem_clk2,(SLAVE)onchip_memory2_0.clk2) 1 0 1 NJ
+preplace netloc EXPORT<net_container>FrameBuf</net_container>(SLAVE)FrameBuf.mem_s1,(SLAVE)onchip_memory2_0.s1) 1 0 1 NJ
+preplace netloc EXPORT<net_container>FrameBuf</net_container>(SLAVE)FrameBuf.mem_s2,(SLAVE)onchip_memory2_0.s2) 1 0 1 NJ
+preplace netloc EXPORT<net_container>FrameBuf</net_container>(SLAVE)FrameBuf.mem_rst1,(SLAVE)onchip_memory2_0.reset1) 1 0 1 NJ
+preplace netloc EXPORT<net_container>FrameBuf</net_container>(SLAVE)onchip_memory2_0.clk1,(SLAVE)FrameBuf.mem_clk1) 1 0 1 NJ
+preplace netloc EXPORT<net_container>FrameBuf</net_container>(SLAVE)FrameBuf.mem_rst2,(SLAVE)onchip_memory2_0.reset2) 1 0 1 NJ
+levelinfo -pg 1 0 60 240
+levelinfo -hier FrameBuf 70 120 230

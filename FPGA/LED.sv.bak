@@ -1,0 +1,190 @@
+module LED (
+		input 				spiClk,
+		input 				nReset,
+		output   			LAT,
+		output 				SDO
+	)
+	
+	reg start;
+	reg [4:0] len;
+	logic done;
+	reg [7:0] data;
+	
+	TLC5955 tlc5955(
+		.CLK(spiClk),
+		.nRESET(nReset),
+		.START(start),
+		.DATA(data),
+		.LEN(len),
+		.SCLK(SCLK),
+		.SDO(SDO[2]),
+		.DONE(done)
+	);
+	
+	reg [3:0] i_state;
+	reg [5:0] cnt;
+	
+	reg controlSentOnce;
+	
+	always_ff@(posedge spiClk) begin: init_FSM
+		if(!nReset) begin
+			i_state <= 4'd0;
+			controlSentOnce <= '0;
+		end else begin
+			case (i_state)
+				4'd0:			//send 96
+					begin
+						start <= '1;
+						len <= 4'd9;
+						data <= {1'd1, 8'd96};
+						
+						i_state <= 4'd1;
+					end
+				4'd1:			//send some zeros, 5 bits first
+					begin
+						if(done) begin
+							len <= 4'd5;
+							data <= '0;
+							
+							cnt <= '0;
+							
+							i_state <= 4'd2;
+						end
+						
+					end
+				4'd2:
+					begin
+						if(done) begin
+							len <= 4'd8;
+							data <= '0;
+							cnt <= cnt + 1'd1;
+							i_state <= (cnt == 6'd47) ? 4'd3 : 4'd2;
+						end
+					end
+					
+				4'd3:		//function control bits
+					begin
+						if(done) begin
+							len <= 4'd5;
+							data <= 5'b01111;
+							
+							i_state <= 4'd4;
+							cnt <= '0;
+						end
+					end
+				4'd4:		//global brightness
+					begin
+						if(done) begin
+							len <= 4'd7;
+							data <= 8'd127;
+							cnt <= cnt + 1'd1;
+							i_state <= (cnt == 6'd2) ? 4'd5 : 4'd4;
+						end
+					end
+				4'd5:		//max current
+					begin
+						if(done) begin
+							len <= 4'd9;
+							data <= {3'd2, 3'd2, 3'd2};
+							
+							i_state <= 4'd6;
+							cnt <= '0;
+						end
+					end
+				4'd6:		//DC
+					begin
+						if(done) begin
+							len <= 4'd7;
+							data <= 7'd127;
+							
+							cnt <= cnt + 1'd1;
+							if(cnt == 6'd2) begin
+								start <= '0;
+								i_state <= 4'd7;
+							end
+							
+						end
+					end
+				4'd7:		//latch
+					begin
+						if(done) begin
+							LAT <= '1;
+							i_state <= 4'd8;
+						end
+					end
+				4'd8:		//latch (need 30ns)
+					begin
+							i_state <= 4'd9;
+					end
+				4'd9:
+					begin
+						LAT <= '0;
+						if(!controlSentOnce) begin
+							controlSentOnce <= '1;
+							i_state <= 4'd0;
+						end else begin
+							i_state <= 4'd10;
+						end
+						
+					end
+				4'd10:	//wait another clock cycle
+					begin
+						i_state <= 4'd11;
+					end
+					
+				//send LED data	
+				4'd11:	//send latch select bit
+					begin
+						start <= '1;
+						len <= 4'd1;
+						data <= 1'd0;
+						
+						i_state <= 4'd12;
+						cnt <= 0;
+					end
+				4'd12:	//send one LED on cmd
+					begin
+						if(done) begin
+							len <= 5'd16;
+							data <= 16'd65535;
+							i_state <= 4'd13;
+							
+							cnt = cnt + 1'd1;
+						end
+					end
+				4'd13:	//set rest of LEDs to zero
+					begin
+						if(done) begin
+							data <= 16'd0;
+							
+							cnt = cnt + 1'd1;
+							
+							if(cnt == 47) begin
+								i_state <= 4'd14;
+								start <= '0;
+							end
+						end
+					end
+				4'd14:	//set latch
+					begin
+						if(LAT) begin
+							LAT <= '0;
+							i_state <= 4'd15;
+						end else begin
+							if(done) begin
+								LAT <= '1;
+							end
+						end
+					end
+				4'd15:	
+					begin
+					
+					end
+					
+				default:
+					i_state <= 4'd0;
+			endcase
+		end
+	end
+	
+endmodule

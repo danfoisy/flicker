@@ -1,0 +1,244 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/flicker2/fpga/vidframetest-RPi-sdram/simulation/modelsim
+vDVI
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1575942340
+!i10b 1
+!s100 V?OI5@C8aaORaUbzIeQgi1
+I[^NW@;oUYReVhE012oWC30
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 DVI_sv_unit
+S1
+R0
+w1575772741
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/DVI.sv
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/DVI.sv
+L0 3
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1575942340.000000
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/DVI.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/DVI.sv|
+!i113 1
+Z6 o-sv -work work
+Z7 !s92 -sv -work work +incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram
+Z8 tCvgOpt 0
+n@d@v@i
+vInitLed
+R1
+R2
+!i10b 1
+!s100 6XVb2Lh<nTg00YAQhRo7]0
+I@P^Tf_D`Q1]4iM3gG>=gH0
+R3
+!s105 InitLed_sv_unit
+S1
+R0
+w1572725363
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/InitLed.sv
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/InitLed.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/InitLed.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/InitLed.sv|
+!i113 1
+R6
+R7
+R8
+n@init@led
+vLedCtrl
+R1
+R2
+!i10b 1
+!s100 9oALSo;U7TiZ`6^C[BLC<3
+IPJk<PT2`=_bib`2@eDHIm2
+R3
+!s105 LedCtrl_sv_unit
+S1
+R0
+w1575835119
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedCtrl.sv
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedCtrl.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedCtrl.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedCtrl.sv|
+!i113 1
+R6
+R7
+R8
+n@led@ctrl
+vLedShift
+R1
+Z9 !s110 1575942338
+!i10b 1
+!s100 zH4e;4PWcAiYFGGLKcAW<3
+IDLU=:YdmFS<EnEY;NfDiS1
+R3
+!s105 LedShift_v_unit
+S1
+R0
+w1572790203
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedShift.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedShift.v
+Z10 L0 40
+R4
+r1
+!s85 0
+31
+Z11 !s108 1575942338.000000
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedShift.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/LedShift.v|
+!i113 1
+R6
+R7
+R8
+n@led@shift
+vReset
+R1
+Z12 !s110 1575942339
+!i10b 1
+!s100 dl5l2Do8]A7cKO2_LRAmO0
+IobK:hDRDT>i?KBEFK@P[e3
+R3
+!s105 Reset_sv_unit
+S1
+R0
+w1563758478
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/Reset.sv
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/Reset.sv
+L0 1
+R4
+r1
+!s85 0
+31
+Z13 !s108 1575942339.000000
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/Reset.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/Reset.sv|
+!i113 1
+R6
+R7
+R8
+n@reset
+vRowBuf
+R1
+R9
+!i10b 1
+!s100 2bS=lCc]TCdZTjlPOOA:>1
+I:bNAjIJS?WdgiNEPBL1bB0
+R3
+!s105 RowBuf_v_unit
+S1
+R0
+w1569280860
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/RowBuf.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/RowBuf.v
+R10
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/RowBuf.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/RowBuf.v|
+!i113 1
+R6
+R7
+R8
+n@row@buf
+vTLC5955
+R1
+R12
+!i10b 1
+!s100 bE@IC^FUE:Ad?5BF<W]cL0
+ICZ9Sai0ihTO=Fkj]S5K<52
+R3
+!s105 TLC5955_sv_unit
+S1
+R0
+w1562291158
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TLC5955.sv
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/TLC5955.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TLC5955.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TLC5955.sv|
+!i113 1
+R6
+R7
+R8
+n@t@l@c5955
+vTurnTimer
+R1
+R12
+!i10b 1
+!s100 6E<71b=O>KZUYkc3Rh8Jg3
+I0M_<licH`]Nca:FC7nk0A3
+R3
+!s105 TurnTimer_sv_unit
+S1
+R0
+w1575941963
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R13
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/TurnTimer.sv|
+!i113 1
+R6
+R7
+R8
+n@turn@timer
+vVideoFifo
+R1
+R9
+!i10b 1
+!s100 WPQ9I_B]`n45l0zbdYI[T2
+IL3I[cR?]6[jhEK0=Ql54b2
+R3
+!s105 VideoFifo_v_unit
+S1
+R0
+w1571514504
+8D:/projects/flicker2/fpga/vidframetest-RPi-sdram/VideoFifo.v
+FD:/projects/flicker2/fpga/vidframetest-RPi-sdram/VideoFifo.v
+R10
+R4
+r1
+!s85 0
+31
+R11
+!s107 D:/projects/flicker2/fpga/vidframetest-RPi-sdram/VideoFifo.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/projects/flicker2/fpga/vidframetest-RPi-sdram|D:/projects/flicker2/fpga/vidframetest-RPi-sdram/VideoFifo.v|
+!i113 1
+R6
+R7
+R8
+n@video@fifo
