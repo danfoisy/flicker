@@ -27,7 +27,7 @@ url: "https://github.com/danfoisy/flicker"
 github_username:  danfoisy
 
 # Build settings
-theme: minima
+theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 markdown: GFM
