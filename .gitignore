@@ -12,6 +12,7 @@ fpga/**/output_files/
 fpga/videos/
 *.stp
 multimedia/
+.jekyll-cache/
 
 
 
