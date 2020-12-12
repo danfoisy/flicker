@@ -5,7 +5,7 @@
 layout: default
 title: "Flicker"
 permalink: /
-
+youtubeId: NmsA6GMSGeg
 
 ---
 
@@ -15,6 +15,8 @@ Introduction
 ----
 
 I've always been fascinated with 3D graphics and volumetric displays - I spent a good chunk of my high school years building tools to draw and animate 3D models, in [Visual Basic for DOS](https://www.cloudwisp.com/blog/exploring-visual-basic-1-for-ms-dos) no less (this was the early '90s!).  I even skipped my high school prom to go and compete in a software development competition with one of my tools (which I won, though I don't think my girlfriend of the time appreciated that :) )
+
+{% include youtubePlayer.html id=page.youtubeId %}
 
 I'm writing this retrospectively, almost a year after I completed this project. I'm not a writer by inclination and I'm not sure who will want to read this but I feel that I need to contribute back to the "community" - if this helps someone in their project, I'll sure it will be worth the effort.
 
@@ -65,7 +67,13 @@ A little metal shaft collar mounts to the shaft using a couple of grub screws.  
 
 ![Sensor mount](images/sensor_mount.png)
 
-I had initially decided to use a hall effect sensor mounted to the PCB and a magnet fixed to the structure to determine the speed of rotation of the shaft for the electronics, as well as a "home" or front position.  This worked poorly - it turns out the motor shaft speed wasn't constant during its entire revolution, something I never expected.  This caused jitter in the image.  I tried detecting multiple magnets so I could get a better estimate of speed at multiple points in the shaft's revolution but it also seemed that the hall sensor had some timing jitter.  I ended up scrapping this arrangement and using a slot based photo-interrupter system that turned out to be accurate engouh for this project.  By measuring the time it takes for the photo sensor to change state (I measure both edges), I get a good enough instantaneous speed estimation.  The sensor mount component is a bit bigger than I wanted but since I have no way of machining metal (and thus adding a threaded hole), I can't use grub screws (maybe a helicoil would work? but I don't have any on hand).  It works, but I would love to have a small lathe and milling machine for this kind of part (don't get me wrong, I love my 3D printer!)
+I had initially decided to use a hall effect sensor mounted to the PCB and a magnet fixed to the structure to determine the speed of rotation of the shaft for the electronics, as well as a "home" or front position.  This worked poorly - it turns out the motor shaft speed wasn't constant during its entire revolution, something I never expected.  This caused jitter in the image.  
+
+![Jitter](images/jitter.jpg)
+
+In the timelapse picture above, Flicker is displaying what should be equidistant green lines, with a red line indicating the home position.  The board is spinning counter-clockwise.  You can see that the lines are initially positioned properly but as time elapses, there is more and more jitter in the angular position of the green lines.  
+
+I tried detecting multiple magnets so I could get a better estimate of speed at multiple points in the shaft's revolution but it also seemed that the hall sensor had some timing jitter.  I ended up scrapping this arrangement and using a slot based photo-interrupter system that turned out to be accurate enough for this project.  By measuring the time it takes for the photo sensor to change state (I measure both edges), I get a good enough instantaneous speed estimation.  The sensor mount component is a bit bigger than I wanted but since I have no way of machining metal (and thus adding a threaded hole), I can't use grub screws (maybe a helicoil would work? but I don't have any on hand).  It works, but I would love to have a small lathe and milling machine for this kind of part (don't get me wrong, I love my 3D printer!)
 
 ![Balance stand](images/balance_stand.png)
 

@@ -30,7 +30,7 @@ github_username:  danfoisy
 theme: minima
 plugins:
   - jekyll-feed
-markdown: GFM
+markdown: Kramdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
