@@ -1,7 +1,7 @@
 Flicker
 ----
 
-[image](https://danfoisy.github.io/flicker/images/image1.png)
+![image](https://danfoisy.github.io/flicker/images/image1.png)
 
 Flicker is a spherical display based on persistence of vision.
 
