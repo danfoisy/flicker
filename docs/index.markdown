@@ -9,7 +9,9 @@ youtubeId: NmsA6GMSGeg
 
 ---
 
+
 ![gif](images/flicker.gif)
+### <a href="https://github.com/danfoisy/flicker" target="_blank">Link to github repo with all the files</a>
 
 Introduction
 ----
@@ -17,7 +19,7 @@ Introduction
 I've always been fascinated with 3D graphics and volumetric displays - I spent a good chunk of my high school years building tools to draw and animate 3D models, in [Visual Basic for DOS](https://www.cloudwisp.com/blog/exploring-visual-basic-1-for-ms-dos) no less (this was the early '90s!).  I even skipped my high school prom to go and compete in a software development competition with one of my tools (which I won, though I don't think my girlfriend of the time appreciated that :) )
 
 {% include youtubePlayer.html id=page.youtubeId %}
-
+##### *Obligatory shaky-cam footage - will update if anyone is at all interested in this*
 I'm writing this retrospectively, almost a year after I completed this project. I'm not a writer by inclination and I'm not sure who will want to read this but I feel that I need to contribute back to the "community" - if this helps someone in their project, I'll sure it will be worth the effort.
 
 I ran across the [Globe](https://www.kickstarter.com/projects/205276705/globe-a-spherical-persistence-of-vision-display) project a couple of years ago and it got me thinking about how I might build something similar.  My day job involves a lot of cloud based app development (well, a lot of meetings about cloud based app dev, not so much hands-on coding anymore) and I'm always looking for interesting projects that will help me maintain my embedded development skills, where my passion lies.  This project seemed challenging enough that I wasn't quite sure about the intricacies of how to build this - but it was obviously possible as someone had done it.  I had an advantage over the Globe project - I just had to build a one-off and not worry about building for reliability and durability (and cost and shipping and... well you get the idea).  Does this project have any end-use?  As a wise person once said, it's not the destination, it's the journey :)
