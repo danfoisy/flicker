@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: "Flicker"
+title: "Flicker - a spherical volumetric display"
 permalink: /
 youtubeId: NmsA6GMSGeg
 
